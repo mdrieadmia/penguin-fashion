@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
-
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .font-bebas{
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .font-roboto{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menubar">
+        <nav class="w-11/12 mx-auto xl:max-w-[1170px;]">
+            <div class="menubar flex flex-col justify-between items-center py-5 md:flex-row">
                 <div class="logo">
-                    <img src="./icons/logo.png" alt="Logo">
-                    <h2><span>Penguin </span>Fashion</h2>
+                    <img class="w-72" src="./icons/logo.png" alt="Logo">
                 </div>
                 <div class="main_menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="flex gap-6 mt-4 md:mt-auto">
+                        <li><a href="#" class="hover:text-orange-700 transition-colors font-roboto text-medium">Home</a></li>
+                        <li><a href="#" class="hover:text-orange-700 transition-colors font-roboto text-medium">Products</a></li>
+                        <li><a href="#" class="hover:text-orange-700 transition-colors font-roboto text-medium">About Us</a></li>
+                        <li><a href="#" class="hover:text-orange-700 transition-colors font-roboto text-medium">Contact</a></li>
                     </ul>
                 </div>
             </div>
