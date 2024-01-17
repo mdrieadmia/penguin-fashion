@@ -6,6 +6,8 @@
     <title>Penguin Fashion</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/2c7411e5f0.js" crossorigin="anonymous"></script>
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +23,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="w-full bg-[#FFFBF0]">
         <nav class="w-11/12 mx-auto xl:max-w-[1170px;]">
             <div class="menubar flex flex-col justify-between items-center py-5 md:flex-row">
                 <div class="logo">
@@ -37,8 +39,17 @@
                 </div>
             </div>
         </nav>
-        <section id="banner">
-
+        <section class="w-11/12 mx-auto py-10 xl:max-w-[1170px;]">
+            <div class="banner_content flex flex-col justify-between items-center gap-6 md:flex-row">
+                <div class="banner_text">
+                    <h1 class="text-6xl font-bebas text-[#363958] text-center md:text-7xl md:text-left"><span class="block text-[#FABE4C]">Be the Penguins</span> of Winter</h1>
+                    <p class="font-roboto text-[#3E3E3E] text-base text-center my-3 md:text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="px-8 py-4 font-roboto text-white text-medium uppercase rounded-xl my-5 block mx-auto md:mx-0 bg-gradient-to-b from-[#A4BC46] to-[#85A019]"> <i class="fa-solid fa-cart-shopping me-2"></i> Buy now</button>
+                </div>
+                <div class="banner_img">
+                    <img src="./images/model.png" alt="Banner Image">
+                </div>
+            </div>
         </section>
     </header>
     <main>
